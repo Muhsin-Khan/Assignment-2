@@ -1,4 +1,67 @@
-h1{
-    background-color: saddlebrown;
-    display: inline-block;
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Roboto+Condensed&display=swap");
+body {
+  font-family: "Outfit", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+}
+/*-----------------------
+ Styles of Section One 
+ -----------------------*/
+ .section-one {
+  display: flex;
+}
+/* Section One Left 
+-------------------*/
+.left-div {
+  margin-top: 15em;
+  padding-left: 5em;
+  padding-right: 2em;
+}
+/* Influencer Products */
+div h2 {
+  position: absolute;
+  top: 0;
+  margin-top: 3em;
+  font-weight: 700;
+}
+/* Heading-1 */
+#section-one-h-1{
+  font-size: 50px;
+  margin-bottom: 0%;
+}
+/* Section One (Button) */
+.section-one-button {
+  margin-top: 3em;
+}
+.button-text {
+  text-decoration: none;
+  color: white;
+  background-image: linear-gradient(rgb(204, 31, 97), rgb(204, 31, 97));
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-weight: 700;
+}
+.font-awesome{
+  margin-left: 1em;
+}
+/* Section One Right (Image Part) 
+---------------------------------*/
+.section-one-right {
+  margin-top: 10em;
+  margin-left: 7em;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image2 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
 }
