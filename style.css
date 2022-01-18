@@ -18,7 +18,6 @@ header h2 {
  -----------------------*/
 .parent {
   display: flex;
-  
 }
 /* Section One Left 
 -------------------*/
@@ -56,7 +55,7 @@ div h2 {
 }
 /* Section One Right (Image Part) 
 ---------------------------------*/
-.section-one-right{
+.section-one-right {
   padding-left: 100px;
   padding-right: 100px;
   position: relative;
@@ -146,7 +145,7 @@ div h2 {
   font-size: 20px;
   font-weight: 800;
 }
-.see-more{
+.see-more {
   text-align: right;
   margin-right: 90px;
 }
@@ -187,21 +186,21 @@ footer {
 ------------------------- */
 /* Mobile Device */
 @media only screen and (max-width: 688px) {
-  .parent, .products
-  {
+  .parent,
+  .products {
     grid-template-columns: repeat(1, 1fr);
   }
-  .parent, .product{
+  .parent,
+  .product {
     flex-direction: column;
   }
   .section-one {
-    width: 100%; 
+    width: 100%;
   }
 }
 /* Tablet Device */
 @media only screen and (min-width: 688px) and (max-width: 992px) {
-  .products
-  {
+  .products {
     grid-template-columns: repeat(2, 1fr);
   }
   .popular-collection {
