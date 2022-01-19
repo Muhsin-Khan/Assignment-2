@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Roboto+Condensed&display=swap");
 body {
   font-family: "Outfit", sans-serif;
-  font-family: "Roboto Condensed", sans-serif;
+  /* font-family: "Roboto Condensed", sans-serif; */
   margin: 0;
 }
 main {
@@ -22,6 +22,7 @@ header h2 {
 /* Section One Left 
 -------------------*/
 .left-div {
+  width: 50%;
   margin-top: 5em;
   padding-left: 120px;
   padding-right: 2em;
@@ -47,7 +48,7 @@ div h2 {
   color: white;
   background-image: linear-gradient(rgb(204, 31, 97), rgb(204, 31, 97));
   padding: 10px 20px;
-  border-radius: 15px;
+  border-radius: 50px;
   font-weight: 700;
 }
 .font-awesome {
@@ -56,23 +57,13 @@ div h2 {
 /* Section One Right (Image Part) 
 ---------------------------------*/
 .section-one-right {
-  padding-left: 100px;
-  padding-right: 100px;
+  margin-top: 50px;
   position: relative;
+  background-image: url(images/Circle-design.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
   top: 0;
   left: 0;
-}
-
-.image1 {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-.image2 {
-  position: absolute;
-  top: 20px;
-  left: 100px;
 }
 /* Image Animation */
 .section-one-right:hover .image2 {
@@ -149,6 +140,88 @@ div h2 {
   text-align: right;
   margin-right: 90px;
 }
+/* ------------------
+    Extra Section 
+---------------------*/
+hr {
+  margin-right: 80px;
+  margin-left: 80px;
+}
+.Extra h1 {
+  margin-left: 125px;
+  font-size: 30px;
+}
+.Extra h1 span {
+  color: rgb(7, 138, 7);
+}
+.parent-of-extra {
+  margin-right: 80px;
+  margin-left: 80px;
+  display: flex;
+}
+.Extra-left-side {
+  width: 50%;
+  padding-left: 45px;
+  padding-bottom: 45px;
+}
+.child-of-Extra-left-side {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px -10px rgb(128 128 128 / 51%);
+}
+.List {
+  padding-left: 0px;
+  padding-right: 10px;
+}
+.child-of-Extra-left-side h2 {
+  margin-top: 25px;
+  margin: bottom 5px;
+}
+.child-of-Extra-left-side p {
+  margin-top: 5px;
+  margin-left: 0px;
+}
+.child-of-Extra-left-side h3 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.child-of-Extra-left-side span {
+  color: gray;
+}
+.child-of-Extra-left-side-rating {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.Extra-left-side img {
+  width: 100%;
+  border-radius: 5px;
+}
+.Extra-right-side {
+  width: 50%;
+  margin: auto;
+  padding-right: 45px;
+}
+.Extra-right-side h2 {
+  padding: 0;
+  margin: 0;
+}
+.Extra-right-side p {
+  text-align: justify;
+  margin-bottom: 30px;
+}
+.Extra-right-side a {
+  text-decoration: none;
+  background-color: rgb(204, 31, 97);
+  /* margin: 2px; */
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-weight: 700;
+  color: white;
+}
+.Extra-right-side span {
+  color: rgb(7, 138, 7);
+}
 /* --------------
          Footer 
    -----------------*/
@@ -185,25 +258,118 @@ footer {
       Media Queries
 ------------------------- */
 /* Mobile Device */
-@media only screen and (max-width: 688px) {
+@media only screen and (max-width: 480px) {
+  #section-one-h-1 {
+    font-size: 30px;
+  }
   .parent,
   .products {
     grid-template-columns: repeat(1, 1fr);
   }
+  .left-div {
+    padding-left: 54px;
+    padding-bottom: 3em;
+    width: 70%;
+    margin-top: 0em;
+  }
+  .image2 {
+    width: 80%;
+    margin-left: 33px;
+  }
+  .section-one-right {
+    background-position: center;
+  }
+  header h2 {
+    padding-left: 54px;
+  }
+  .products {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .see-more > a {
+    padding-top: 2px;
+  }
+  hr {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+  .see-more {
+    text-align: right;
+    margin-right: 32px;
+  }
+  .Extra h1 {
+    margin-left: 0px;
+    text-align: center;
+    font-size: 30px;
+  }
+  .Extra-left-side {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 45px;
+    margin: auto;
+  }
+  .child-of-Extra-left-side {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px -10px rgb(128 128 128 / 51%);
+  }
+  .Extra-right-side {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+  }
+  .parent-of-extra {
+    margin-right: 2px;
+    margin-left: 2px;
+  }
   .parent,
-  .product {
+  .product,
+  .parent-of-extra {
     flex-direction: column;
   }
   .section-one {
     width: 100%;
   }
+  .Extra {
+    width: 100%;
+  }
 }
 /* Tablet Device */
-@media only screen and (min-width: 688px) and (max-width: 992px) {
+@media only screen and (min-width: 481px) and (max-width: 992px) {
   .products {
     grid-template-columns: repeat(2, 1fr);
   }
+  .products {
+    flex-direction: column;
+  }
   .popular-collection {
     width: 100%;
+  }
+  .Extra {
+    width: 100%;
+  }
+  .left-div {
+    width: 50%;
+    margin-top: 55px;
+    padding-left: 60px;
+    padding-right: 34px;
+    padding-bottom: 5px;
+  }
+  header h2 {
+    padding-left: 60px;
+    padding-bottom: 2px;
+  }
+  .section-one-right {
+    padding-right: 60px;
+    margin-top: 50px;
+    position: relative;
+    background-image: url(images/Circle-design.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
   }
 }
